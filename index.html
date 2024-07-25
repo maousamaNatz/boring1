@@ -1,0 +1,2052 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </head>
+  <body>
+    <!-- loading -->
+    <div id="loading">
+      <img src="./images/download.gif" alt="Loading..." />
+    </div>
+    <!-- toast -->
+    <div class="toast-container z-1 position-fixed top-0 end-0 p-3">
+      <div
+        id="liveToast"
+        class="toast"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="toast-header">
+          <img src="" class="rounded me-2" alt="..." />
+          <strong class="me-auto">Form Validation</strong>
+          <small class="text-muted">Just now</small>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="toast-body">Harap isi semua field sebelum melanjutkan.</div>
+      </div>
+    </div>
+    <!-- navbar -->
+    <nav class="navbar bg-body-tertiary mb-4 w-100">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold fs-2" href="#">
+          LOGO
+          <!-- <img src="./" alt="logo itesa" width="200px" /> -->
+        </a>
+        <a href="" class="btn btn-danger">Kembali</a>
+      </div>
+    </nav>
+    <!-- page -->
+    <div class="w-100 h-100 d-flex">
+      <div class="container">
+        <div class="w-fit c ops">
+          <div class="row p-2">
+            <div
+              class="col-lg-6 p-5 d-flex align-items-center justify-content-center"
+            >
+              <div class="w-100">
+                <img
+                  src="./credit images/gabuubanget.png"
+                  class="w-100 h-100 object-fit-cover"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-lg-6 d-flex align-items-center">
+              <form method="post" id="first-form" class="w-100">
+                <div class="d-flex flex-column w-100">
+                  <div class="row">
+                    <div class="mb-3 col-lg-6">
+                      <label for="nama" class="form-label">nama</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="masukan nama anda"
+                        id="nama"
+                      />
+                    </div>
+                    <div class="mb-3 col-lg-6">
+                      <label for="thls" class="form-label">tahun lulus</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="tahun lulus anda"
+                        id="thls"
+                      />
+                    </div>
+                    <div class="mb-3 col-lg-6">
+                      <label for="NIM" class="form-label">NIM</label>
+                      <input
+                        type="number"
+                        class="form-control"
+                        placeholder="masukan nim anda"
+                        id="NIM"
+                      />
+                    </div>
+                    <div class="mb-3 col-lg-6">
+                      <label for="program" class="form-label"
+                        >Program studi</label
+                      >
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                        id="program"
+                      >
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+
+                    <div class="mb-3 col-lg-6">
+                      <label for="email" class="form-label">email</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="masukan email anda"
+                        id="email"
+                      />
+                    </div>
+                    <div class="mb-3 col-lg-6">
+                      <label for="nik" class="form-label">NIK</label>
+                      <input
+                        type="number"
+                        class="form-control"
+                        placeholder="masukan email anda"
+                        id="nik"
+                      />
+                    </div>
+                    <div class="mb-3 col-lg-6">
+                      <label for="Tanggal Lahir" class="form-label"
+                        >Tanggal Lahir</label
+                      >
+                      <input
+                        type="date"
+                        class="form-control"
+                        placeholder="masukan email anda"
+                        id="Tanggal Lahir"
+                      />
+                    </div>
+                    <div class="mb-3 col-lg-6">
+                      <label for="npwp" class="form-label">NPWP</label>
+                      <input
+                        type="number"
+                        class="form-control"
+                        placeholder="masukan email anda"
+                        id="npwp"
+                      />
+                    </div>
+                  </div>
+                  <a id="buttons" class="btn btn-danger ms-auto">Lanjut</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div id="second-page" class="row">
+          <form action="" method="post" id="twos-form">
+            <div class="col-12">
+              <p class="fw-bold mt-5">1. Jelaskan Status Anda Saat Ini?</p>
+              <div class="question-group" data-group="1">
+                <div class="row">
+                  <div class="col-md-6">
+                    <input type="radio" name="pStatusSatu" id="five" />
+                    <label for="five" class="box fifth w-100">
+                      <div class="course">
+                        <span class="circle"></span>
+                        <span class="subject"
+                          >Bekerja (Full time / part time)</span
+                        >
+                      </div>
+                    </label>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="radio" name="pStatusSatu" id="six" />
+                    <label for="six" class="box sixth w-100">
+                      <div class="course">
+                        <span class="circle"></span>
+                        <span class="subject">
+                          belum memungkinkan bekerja
+                        </span>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="radio" name="pStatusSatu" id="seven" />
+                    <label for="seven" class="box seveth w-100">
+                      <div class="course">
+                        <span class="circle"></span>
+                        <span class="subject"> Wiraswasta </span>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="radio" name="pStatusSatu" id="eight" />
+                    <label for="eight" class="box eighth w-100">
+                      <div class="course">
+                        <span class="circle"></span>
+                        <span class="subject"> Melanjutkan Pendidikan </span>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="col-12">
+                    <input type="radio" name="pStatusSatu" id="nine" />
+                    <label for="nine" class="box nineth w-100">
+                      <div class="course">
+                        <span class="circle"></span>
+                        <span class="subject"
+                          >Tidak kerja tetapi sedang mencari kerja
+                        </span>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <p class="fw-bold mt-5">
+                2. Sebutkan Sumberdana dalam pembiayaan sekolah? (bukan ketika
+                Studi Lanjut)
+              </p>
+              <div class="question-group" data-group="2">
+                <div class="row">
+                  <div class="col-md-6">
+                    <input type="radio" name="statusDua" id="ab" />
+                    <label for="ab" class="box w-100">
+                      <div class="course">
+                        <span class="circle"></span>
+                        <span class="subject">Biaya Sendiri/Keluarga</span>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="radio" name="statusDua" id="ac" />
+                    <label for="ac" class="box w-100">
+                      <div class="course">
+                        <span class="circle"></span>
+                        <span class="subject"> Beasiswa ADIK </span>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="radio" name="statusDua" id="ae" />
+                    <label for="ae" class="box w-100">
+                      <div class="course">
+                        <span class="circle"></span>
+                        <span class="subject"> Beasiswa BIDIKMISI </span>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="radio" name="statusDua" id="af" />
+                    <label for="af" class="box w-100">
+                      <div class="course">
+                        <span class="circle"></span>
+                        <span class="subject"> Beasiswa PPA </span>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="radio" name="statusDua" id="ag" />
+                    <label for="ag" class="box w-100">
+                      <div class="course">
+                        <span class="circle"></span>
+                        <span class="subject"> Beasiswa AFIRMASI </span>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="radio" name="statusDua" id="aj" />
+                    <label for="aj" class="box w-100">
+                      <div class="course">
+                        <span class="circle"></span>
+                        <span class="subject">
+                          Beasiswa Perusahaan/Swasta
+                        </span>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="col-12">
+                    <input type="radio" name="statusDua" id="ah" />
+                    <label for="ah" class="box w-100">
+                      <div class="course">
+                        <span class="circle"></span>
+                        <span class="subject"> </span>
+                        <input
+                          type="text"
+                          disabled
+                          class="form-control subject"
+                          placeholder="masukan nama anda"
+                          id="exampleInputEmail1"
+                        />
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <p class="fw-bold mt-5">
+                3. Pada saat lulus, pada tingkat mana kompetensi di bawah ini
+                anda : kuasai? (A) Pada saat ini, pada tingkat mana kompetensi
+                di bawah ini diperlukan dalam pekerjaan? (B) *
+              </p>
+              <div class="overflow-x-auto">
+                <table class="table" cellpadding="10">
+                  <thead>
+                    <tr>
+                      <th colspan="6" class="center">A</th>
+                      <th colspan="6" class="center">B</th>
+                    </tr>
+                    <tr>
+                      <th colspan="6" class="center">
+                        Sangat Rendah - Sangat Tinggi
+                      </th>
+                      <th colspan="6" class="center">
+                        Sangat Rendah - Sangat Tinggi
+                      </th>
+                    </tr>
+                    <tr>
+                      <th class="center">1</th>
+                      <th class="center">2</th>
+                      <th class="center">3</th>
+                      <th class="center">4</th>
+                      <th class="center">5</th>
+                      <th class="center">Kompetensi</th>
+                      <th class="center">1</th>
+                      <th class="center">2</th>
+                      <th class="center">3</th>
+                      <th class="center">4</th>
+                      <th class="center">5</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr data-name="etika">
+                      <td>
+                        <input
+                          type="radio"
+                          id="etika-a1"
+                          name="etika-a"
+                          value="1"
+                        />
+                        <label for="etika-a1" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="etika-a2"
+                          name="etika-a"
+                          value="2"
+                        />
+                        <label for="etika-a2" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="etika-a3"
+                          name="etika-a"
+                          value="3"
+                        />
+                        <label for="etika-a3" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="etika-a4"
+                          name="etika-a"
+                          value="4"
+                        />
+                        <label for="etika-a4" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="etika-a5"
+                          name="etika-a"
+                          value="5"
+                        />
+                        <label for="etika-a5" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>Etika</td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="etika-b1"
+                          name="etika-b"
+                          value="1"
+                        />
+                        <label for="etika-b1" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="etika-b2"
+                          name="etika-b"
+                          value="2"
+                        />
+                        <label for="etika-b2" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="etika-b3"
+                          name="etika-b"
+                          value="3"
+                        />
+                        <label for="etika-b3" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="etika-b4"
+                          name="etika-b"
+                          value="4"
+                        />
+                        <label for="etika-b4" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="etika-b5"
+                          name="etika-b"
+                          value="5"
+                        />
+                        <label for="etika-b5" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                    </tr>
+                    <tr data-name="bidang">
+                      <td>
+                        <input
+                          type="radio"
+                          id="bidang-a1"
+                          name="bidang-a"
+                          value="1"
+                        />
+                        <label for="bidang-a1" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="bidang-a2"
+                          name="bidang-a"
+                          value="2"
+                        />
+                        <label for="bidang-a2" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="bidang-a3"
+                          name="bidang-a"
+                          value="3"
+                        />
+                        <label for="bidang-a3" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="bidang-a4"
+                          name="bidang-a"
+                          value="4"
+                        />
+                        <label for="bidang-a4" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="bidang-a5"
+                          name="bidang-a"
+                          value="5"
+                        />
+                        <label for="bidang-a5" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>Keahlian Berdasarkan Bidang Ilmu</td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="bidang-b1"
+                          name="bidang-b"
+                          value="1"
+                        />
+                        <label for="bidang-b1" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="bidang-b2"
+                          name="bidang-b"
+                          value="2"
+                        />
+                        <label for="bidang-b2" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="bidang-b3"
+                          name="bidang-b"
+                          value="3"
+                        />
+                        <label for="bidang-b3" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="bidang-b4"
+                          name="bidang-b"
+                          value="4"
+                        />
+                        <label for="bidang-b4" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="bidang-b5"
+                          name="bidang-b"
+                          value="5"
+                        />
+                        <label for="bidang-b5" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                    </tr>
+                    <tr data-name="tekin">
+                      <td>
+                        <input
+                          type="radio"
+                          id="tekin-a1"
+                          name="tekin-a"
+                          value="1"
+                        />
+                        <label for="tekin-a1" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="tekin-a2"
+                          name="tekin-a"
+                          value="2"
+                        />
+                        <label for="tekin-a2" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="tekin-a3"
+                          name="tekin-a"
+                          value="3"
+                        />
+                        <label for="tekin-a3" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="tekin-a4"
+                          name="tekin-a"
+                          value="4"
+                        />
+                        <label for="tekin-a4" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="tekin-a5"
+                          name="tekin-a"
+                          value="5"
+                        />
+                        <label for="tekin-a5" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>Penggunaan Teknologi Informasi</td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="tekin-b1"
+                          name="tekin-b"
+                          value="1"
+                        />
+                        <label for="tekin-b1" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="tekin-b2"
+                          name="tekin-b"
+                          value="2"
+                        />
+                        <label for="tekin-b2" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="tekin-b3"
+                          name="tekin-b"
+                          value="3"
+                        />
+                        <label for="tekin-b3" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="tekin-b4"
+                          name="tekin-b"
+                          value="4"
+                        />
+                        <label for="tekin-b4" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="tekin-b5"
+                          name="tekin-b"
+                          value="5"
+                        />
+                        <label for="tekin-b5" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                    </tr>
+                    <tr data-name="komunikasi">
+                      <td>
+                        <input
+                          type="radio"
+                          id="komunikasi-a1"
+                          name="komunikasi-a"
+                          value="1"
+                        />
+                        <label for="komunikasi-a1" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="komunikasi-a2"
+                          name="komunikasi-a"
+                          value="2"
+                        />
+                        <label for="komunikasi-a2" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="komunikasi-a3"
+                          name="komunikasi-a"
+                          value="3"
+                        />
+                        <label for="komunikasi-a3" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="komunikasi-a4"
+                          name="komunikasi-a"
+                          value="4"
+                        />
+                        <label for="komunikasi-a4" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="komunikasi-a5"
+                          name="komunikasi-a"
+                          value="5"
+                        />
+                        <label for="komunikasi-a5" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>komunikasi</td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="komunikasi-b1"
+                          name="komunikasi-b"
+                          value="1"
+                        />
+                        <label for="komunikasi-b1" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="komunikasi-b2"
+                          name="komunikasi-b"
+                          value="2"
+                        />
+                        <label for="komunikasi-b2" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="komunikasi-b3"
+                          name="komunikasi-b"
+                          value="3"
+                        />
+                        <label for="komunikasi-b3" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="komunikasi-b4"
+                          name="komunikasi-b"
+                          value="4"
+                        />
+                        <label for="komunikasi-b4" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="komunikasi-b5"
+                          name="komunikasi-b"
+                          value="5"
+                        />
+                        <label for="komunikasi-b5" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                    </tr>
+                    <tr data-name="kerjasama">
+                      <td>
+                        <input
+                          type="radio"
+                          id="kerjasama-a1"
+                          name="kerjasama-a"
+                          value="1"
+                        />
+                        <label for="kerjasama-a1" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="kerjasama-a2"
+                          name="kerjasama-a"
+                          value="2"
+                        />
+                        <label for="kerjasama-a2" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="kerjasama-a3"
+                          name="kerjasama-a"
+                          value="3"
+                        />
+                        <label for="kerjasama-a3" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="kerjasama-a4"
+                          name="kerjasama-a"
+                          value="4"
+                        />
+                        <label for="kerjasama-a4" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="kerjasama-a5"
+                          name="kerjasama-a"
+                          value="5"
+                        />
+                        <label for="kerjasama-a5" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>kerja sama tim</td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="kerjasama-b1"
+                          name="kerjasama-b"
+                          value="1"
+                        />
+                        <label for="kerjasama-b1" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="kerjasama-b2"
+                          name="kerjasama-b"
+                          value="2"
+                        />
+                        <label for="kerjasama-b2" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="kerjasama-b3"
+                          name="kerjasama-b"
+                          value="3"
+                        />
+                        <label for="kerjasama-b3" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="kerjasama-b4"
+                          name="kerjasama-b"
+                          value="4"
+                        />
+                        <label for="kerjasama-b4" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="kerjasama-b5"
+                          name="kerjasama-b"
+                          value="5"
+                        />
+                        <label for="kerjasama-b5" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                    </tr>
+                    <tr data-name="pengembangan">
+                      <td>
+                        <input
+                          type="radio"
+                          id="pengembangan-a1"
+                          name="pengembangan-a"
+                          value="1"
+                        />
+                        <label for="pengembangan-a1" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="pengembangan-a2"
+                          name="pengembangan-a"
+                          value="2"
+                        />
+                        <label for="pengembangan-a2" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="pengembangan-a3"
+                          name="pengembangan-a"
+                          value="3"
+                        />
+                        <label for="pengembangan-a3" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="pengembangan-a4"
+                          name="pengembangan-a"
+                          value="4"
+                        />
+                        <label for="pengembangan-a4" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="pengembangan-a5"
+                          name="pengembangan-a"
+                          value="5"
+                        />
+                        <label for="pengembangan-a5" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>pengembangan</td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="pengembangan-b1"
+                          name="pengembangan-b"
+                          value="1"
+                        />
+                        <label for="pengembangan-b1" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="pengembangan-b2"
+                          name="pengembangan-b"
+                          value="2"
+                        />
+                        <label for="pengembangan-b2" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="pengembangan-b3"
+                          name="pengembangan-b"
+                          value="3"
+                        />
+                        <label for="pengembangan-b3" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="pengembangan-b4"
+                          name="pengembangan-b"
+                          value="4"
+                        />
+                        <label for="pengembangan-b4" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                      <td>
+                        <input
+                          type="radio"
+                          id="pengembangan-b5"
+                          name="pengembangan-b"
+                          value="5"
+                        />
+                        <label for="pengembangan-b5" class="box">
+                          <div class="course cc cs">
+                            <span class="circle"></span>
+                          </div>
+                        </label>
+                      </td>
+                    </tr>
+                    <!-- Repeat similar structure for other competencies -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="col-12">
+              <p class="fw-bold mt-5">
+                4. Menurut anda seberaoa besar penekanan pada metode
+                pembelajaran di bawah ini dilaksanakan di program studi anda?
+              </p>
+              <div class="row">
+                <div class="col-sm-2 col-lg-4">
+                  <p class="fw-bold mt-3">Perkuliahan</p>
+                  <div class="question-group" data-group="3">
+                    <div class="row">
+                      <div class="col-12">
+                        <input type="radio" name="statustiga" id="jk" />
+                        <label for="jk" class="box w-100">
+                          <div class="course">
+                            <span class="circle"></span>
+                            <span class="subject">Sangat Besar</span>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-12">
+                        <input type="radio" name="statustiga" id="lk" />
+                        <label for="lk" class="box w-100">
+                          <div class="course">
+                            <span class="circle"></span>
+                            <span class="subject"> Besar </span>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-12">
+                        <input type="radio" name="statustiga" id="lsa" />
+                        <label for="lsa" class="box w-100">
+                          <div class="course">
+                            <span class="circle"></span>
+                            <span class="subject"> Cukup Besar </span>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-12">
+                        <input type="radio" name="statustiga" id="afa" />
+                        <label for="afa" class="box w-100">
+                          <div class="course">
+                            <span class="circle"></span>
+                            <span class="subject"> Kurang Besar </span>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-12">
+                        <input type="radio" name="statustiga" id="ags" />
+                        <label for="ags" class="box w-100">
+                          <div class="course">
+                            <span class="circle"></span>
+                            <span class="subject"> Tidak Sama Sekali </span>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2 col-lg-4">
+                  <p class="fw-bold mt-3">Demonstrasi</p>
+                  <div class="question-group" data-group="4">
+                    <div class="row">
+                      <div class="col-12">
+                        <input type="radio" name="statusempat" id="abs" />
+                        <label for="abs" class="box w-100">
+                          <div class="course">
+                            <span class="circle"></span>
+                            <span class="subject">Sangat Besar</span>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-12">
+                        <input type="radio" name="statusempat" id="acc" />
+                        <label for="acc" class="box w-100">
+                          <div class="course">
+                            <span class="circle"></span>
+                            <span class="subject"> Besar </span>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-12">
+                        <input type="radio" name="statusempat" id="ael" />
+                        <label for="ael" class="box w-100">
+                          <div class="course">
+                            <span class="circle"></span>
+                            <span class="subject"> Cukup Besar </span>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-12">
+                        <input type="radio" name="statusempat" id="afo" />
+                        <label for="afo" class="box w-100">
+                          <div class="course">
+                            <span class="circle"></span>
+                            <span class="subject"> Kurang Besar </span>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-12">
+                        <input type="radio" name="statusempat" id="agl" />
+                        <label for="agl" class="box w-100">
+                          <div class="course">
+                            <span class="circle"></span>
+                            <span class="subject"> Tidak Sama Sekali </span>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2 col-lg-4">
+                  <p class="fw-bold mt-3">Partisipasi Dalam proyek riset</p>
+                  <div class="question-group" data-group="5">
+                    <div class="row">
+                      <div class="col-12">
+                        <input type="radio" name="statuslima" id="absl" />
+                        <label for="absl" class="box w-100">
+                          <div class="course">
+                            <span class="circle"></span>
+                            <span class="subject">Sangat Besar</span>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-12">
+                        <input type="radio" name="statuslima" id="acca" />
+                        <label for="acca" class="box w-100">
+                          <div class="course">
+                            <span class="circle"></span>
+                            <span class="subject"> Besar </span>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-12">
+                        <input type="radio" name="statuslima" id="aell" />
+                        <label for="aell" class="box w-100">
+                          <div class="course">
+                            <span class="circle"></span>
+                            <span class="subject"> Cukup Besar </span>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-12">
+                        <input type="radio" name="statuslima" id="afol" />
+                        <label for="afol" class="box w-100">
+                          <div class="course">
+                            <span class="circle"></span>
+                            <span class="subject"> Kurang Besar </span>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-12">
+                        <input type="radio" name="statuslima" id="agla" />
+                        <label for="agla" class="box w-100">
+                          <div class="course">
+                            <span class="circle"></span>
+                            <span class="subject"> Tidak Sama Sekali </span>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2 col-lg-4">
+                  <p class="fw-bold mt-3">Magang</p>
+                  <div class="question-group" data-group="6">
+                    <div class="row">
+                      <div class="col-12">
+                        <input type="radio" name="statusenam" id="jnk" />
+                        <label for="jnk" class="box w-100">
+                          <div class="course">
+                            <span class="circle"></span>
+                            <span class="subject">Sangat Besar</span>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-12">
+                        <input type="radio" name="statusenam" id="kls" />
+                        <label for="kls" class="box w-100">
+                          <div class="course">
+                            <span class="circle"></span>
+                            <span class="subject"> Besar </span>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-12">
+                        <input type="radio" name="statusenam" id="naoy" />
+                        <label for="naoy" class="box w-100">
+                          <div class="course">
+                            <span class="circle"></span>
+                            <span class="subject"> Cukup Besar </span>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-12">
+                        <input type="radio" name="statusenam" id="aop" />
+                        <label for="aop" class="box w-100">
+                          <div class="course">
+                            <span class="circle"></span>
+                            <span class="subject"> Kurang Besar </span>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-12">
+                        <input type="radio" name="statusenam" id="lap" />
+                        <label for="lap" class="box w-100">
+                          <div class="course">
+                            <span class="circle"></span>
+                            <span class="subject"> Tidak Sama Sekali </span>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2 col-lg-4">
+                  <p class="fw-bold mt-3">Praktikum</p>
+                  <div class="question-group" data-group="7">
+                    <div class="row">
+                      <div class="col-12">
+                        <input type="radio" name="statusenam" id="jmk" />
+                        <label for="jmk" class="box w-100">
+                          <div class="course">
+                            <span class="circle"></span>
+                            <span class="subject">Sangat Besar</span>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-12">
+                        <input type="radio" name="statusenam" id="lak" />
+                        <label for="lak" class="box w-100">
+                          <div class="course">
+                            <span class="circle"></span>
+                            <span class="subject"> Besar </span>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-12">
+                        <input type="radio" name="statusenam" id="aslm" />
+                        <label for="aslm" class="box w-100">
+                          <div class="course">
+                            <span class="circle"></span>
+                            <span class="subject"> Cukup Besar </span>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-12">
+                        <input type="radio" name="statusenam" id="abcd" />
+                        <label for="abcd" class="box w-100">
+                          <div class="course">
+                            <span class="circle"></span>
+                            <span class="subject"> Kurang Besar </span>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-12">
+                        <input type="radio" name="statusenam" id="efgh" />
+                        <label for="efgh" class="box w-100">
+                          <div class="course">
+                            <span class="circle"></span>
+                            <span class="subject"> Tidak Sama Sekali </span>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2 col-lg-4">
+                  <p class="fw-bold mt-3">kerja lapangan</p>
+                  <div class="question-group" data-group="8">
+                    <div class="row">
+                      <div class="col-12">
+                        <input type="radio" name="statusenam" id="laks" />
+                        <label for="laks" class="box w-100">
+                          <div class="course">
+                            <span class="circle"></span>
+                            <span class="subject">Sangat Besar</span>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-12">
+                        <input type="radio" name="statusenam" id="pojk" />
+                        <label for="pojk" class="box w-100">
+                          <div class="course">
+                            <span class="circle"></span>
+                            <span class="subject"> Besar </span>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-12">
+                        <input type="radio" name="statusenam" id="opws" />
+                        <label for="opws" class="box w-100">
+                          <div class="course">
+                            <span class="circle"></span>
+                            <span class="subject"> Cukup Besar </span>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-12">
+                        <input type="radio" name="statusenam" id="awoi" />
+                        <label for="awoi" class="box w-100">
+                          <div class="course">
+                            <span class="circle"></span>
+                            <span class="subject"> Kurang Besar </span>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-12">
+                        <input type="radio" name="statusenam" id="klos" />
+                        <label for="klos" class="box w-100">
+                          <div class="course">
+                            <span class="circle"></span>
+                            <span class="subject"> Tidak Sama Sekali </span>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <p class="fw-bold mt-3">Diskusi</p>
+                  <div class="question-group" data-group="9">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <input type="radio" name="statusenam" id="mksa" />
+                        <label for="mksa" class="box w-100">
+                          <div class="course">
+                            <span class="circle"></span>
+                            <span class="subject">Sangat Besar</span>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-md-6">
+                        <input type="radio" name="statusenam" id="awok" />
+                        <label for="awok" class="box w-100">
+                          <div class="course">
+                            <span class="circle"></span>
+                            <span class="subject"> Besar </span>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-md-6">
+                        <input type="radio" name="statusenam" id="clop" />
+                        <label for="clop" class="box w-100">
+                          <div class="course">
+                            <span class="circle"></span>
+                            <span class="subject"> Cukup Besar </span>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-md-6">
+                        <input type="radio" name="statusenam" id="gps" />
+                        <label for="gps" class="box w-100">
+                          <div class="course">
+                            <span class="circle"></span>
+                            <span class="subject"> Kurang Besar </span>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-12">
+                        <input type="radio" name="statusenam" id="hehe" />
+                        <label for="hehe" class="box w-100">
+                          <div class="course">
+                            <span class="circle"></span>
+                            <span class="subject"> Tidak Sama Sekali </span>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <p class="fw-bold mt-5">
+                5. Kapan anda mulai mencari pekerjaan? Mohon Pekerjaan sambilan
+                tidak dimasukan.
+              </p>
+              <div class="question-group" data-group="10">
+                <div class="row">
+                  <div class="col-md-6">
+                    <input type="radio" name="statusDua" id="ahas" />
+                    <label for="ahas" class="box w-100">
+                      <div class="course">
+                        <span class="circle"></span>
+                        <span
+                          class="subject d-flex text-nowrap align-items-center justify-content-center"
+                        >
+                          Kira-kira
+                          <input
+                            width="20px"
+                            type="text"
+                            disabled
+                            class="form-control subject mx-2"
+                            placeholder=""
+                            id="exampleInputEmail1"
+                          />
+                          bulan sebelum lulus
+                        </span>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="radio" name="statusDua" id="ahas" />
+                    <label for="ahas" class="box w-100">
+                      <div class="course">
+                        <span class="circle"></span>
+                        <span
+                          class="subject d-flex text-nowrap align-items-center justify-content-center"
+                        >
+                          Kira-kira
+                          <input
+                            width="20px"
+                            type="text"
+                            disabled
+                            class="form-control subject mx-2"
+                            placeholder=""
+                            id="exampleInputEmail1"
+                          />
+                          bulan sesudah lulus
+                        </span>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="col-12">
+                    <input type="radio" name="statusDua" id="ahass" />
+                    <label for="ahass" class="box w-100">
+                      <div class="course">
+                        <span class="circle"></span>
+                        <span class="subject"> Saya tidak mencari kerja </span>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <p class="fw-bold mt-5">
+                6. Bagaimana anda mencari pekerjaan tersebut? jawaban bisa lebih
+                dari satu
+              </p>
+              <div class="check-question-group" data-group="2">
+                <div class="row">
+                  <div class="col-md-6">
+                    <input type="checkbox" name="Delapan" id="abck" />
+                    <label for="abck" class="box w-100">
+                      <div class="course">
+                        <span class="circle"></span>
+                        <span class="subject"
+                          >Melalui Iklan di koran/ majalah brosur</span
+                        >
+                      </div>
+                    </label>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="checkbox" name="statusDua" id="abkl" />
+                    <label for="abkl" class="box w-100">
+                      <div class="course">
+                        <span class="circle"></span>
+                        <span class="subject"
+                          >Melamar ke perusahaan tanpa mengetahui lowongan yang
+                          ada</span
+                        >
+                      </div>
+                    </label>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="checkbox" name="statusDua" id="abkls" />
+                    <label for="abkls" class="box w-100">
+                      <div class="course">
+                        <span class="circle"></span>
+                        <span class="subject"
+                          >pergi ke bursa / iklan online / milis</span
+                        >
+                      </div>
+                    </label>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="checkbox" name="statusDua" id="awoks" />
+                    <label for="awoks" class="box w-100">
+                      <div class="course">
+                        <span class="circle"></span>
+                        <span class="subject">Dihubungi Oleh perusahaan</span>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="checkbox" name="statusDua" id="kawol" />
+                    <label for="kawol" class="box w-100">
+                      <div class="course">
+                        <span class="circle"></span>
+                        <span class="subject">Menghubungi Kemenakertrans</span>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="checkbox" name="statusDua" id="kawols" />
+                    <label for="kawols" class="box w-100">
+                      <div class="course">
+                        <span class="circle"></span>
+                        <span class="subject"
+                          >Menghubungi agen tenaga kerja komersial /
+                          swasta</span
+                        >
+                      </div>
+                    </label>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="checkbox" name="statusDua" id="kawolss" />
+                    <label for="kawolss" class="box w-100">
+                      <div class="course">
+                        <span class="circle"></span>
+                        <span class="subject"
+                          >Memperoleh informasi dari pusat / kantor pengembangan
+                          karir fakultas / universitas</span
+                        >
+                      </div>
+                    </label>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="checkbox" name="statusDua" id="kawolsscs" />
+                    <label for="kawolsscs" class="box w-100">
+                      <div class="course">
+                        <span class="circle"></span>
+                        <span class="subject"
+                          >Menghubungi kantor kemahasiswaan / hubungan
+                          analumni</span
+                        >
+                      </div>
+                    </label>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="checkbox" name="statusDua" id="aowks" />
+                    <label for="aowks" class="box w-100">
+                      <div class="course">
+                        <span class="circle"></span>
+                        <span class="subject"
+                          >Membangun jejaring (network) sejak masih kuliah</span
+                        >
+                      </div>
+                    </label>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="checkbox" name="statusDua" id="yysk" />
+                    <label for="yysk" class="box w-100">
+                      <div class="course">
+                        <span class="circle"></span>
+                        <span class="subject"
+                          >Melalui relasi (misalnya dosen , orang tua, saudara ,
+                          teman dll)</span
+                        >
+                      </div>
+                    </label>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="checkbox" name="statusDua" id="yysk" />
+                    <label for="yysk" class="box w-100">
+                      <div class="course">
+                        <span class="circle"></span>
+                        <span class="subject">Membangun bisnis sendiri</span>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="checkbox" name="statusDua" id="ksla" />
+                    <label for="ksla" class="box w-100">
+                      <div class="course">
+                        <span class="circle"></span>
+                        <span class="subject"
+                          >Melalui penempatan kerja atau magang</span
+                        >
+                      </div>
+                    </label>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="checkbox" name="statusDua" id="hauyu" />
+                    <label for="hauyu" class="box w-100">
+                      <div class="course">
+                        <span class="circle"></span>
+                        <span class="subject"
+                          >Melalui penempatan kerja atau magang</span
+                        >
+                      </div>
+                    </label>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="checkbox" name="statusDua" id="abcn" />
+                    <label for="abcn" class="box w-100">
+                      <div class="course">
+                        <span class="circle"></span>
+                        <span class="subject"
+                          >Bekerja di tempat yang sama dengan tempat kerja
+                          semasa kuliah</span
+                        >
+                      </div>
+                    </label>
+                  </div>
+                  <div class="col-12">
+                    <input type="checkbox" name="statusDua" id="jka" />
+                    <label for="jka" class="box w-100">
+                      <div class="course">
+                        <span class="circle"></span>
+                        <span class="subject"> </span>
+                        <input
+                          type="text"
+                          disabled
+                          class="form-control subject"
+                          placeholder="masukan nama anda"
+                          id="exampleInputEmail1"
+                        />
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <p class="fw-bold mb-3 mt-5">
+                7. Berapa perusahaan / instansi / institusi yang sudah anda
+                lamar (lewat surat atau e-mail) sebelum anda memperoleh
+                pekerjaan pertama?
+              </p>
+              <div class="d-flex align-items-center justify-content-start">
+                <input
+                  type="text"
+                  id=""
+                  name=""
+                  class="form-control w-25 mx-2"
+                />
+                <span class="text-nowrap"
+                  >Perusahaan / instansi / institusi</span
+                >
+              </div>
+            </div>
+            <div class="col-12">
+              <p class="fw-bold mb-3 mt-5">
+                8. Berapa banyak perusahaan / instansi / institusi yang
+                merespons lamaran anda?
+              </p>
+              <div class="d-flex align-items-center justify-content-start">
+                <input
+                  type="text"
+                  id=""
+                  name=""
+                  class="form-control w-25 mx-2"
+                />
+                <span class="text-nowrap"
+                  >Perusahaan / instansi / institusi</span
+                >
+              </div>
+            </div>
+            <div class="col-12">
+              <p class="fw-bold mb-3 mt-5">
+                9. Berapa banyak perusahaan / instansi / institusi yang
+                mengundang anda untuk wawancara?
+              </p>
+              <div class="d-flex align-items-center justify-content-start">
+                <input
+                  type="text"
+                  id=""
+                  name=""
+                  class="form-control w-25 mx-2"
+                />
+                <span class="text-nowrap"
+                  >Perusahaan / instansi / institusi</span
+                >
+              </div>
+            </div>
+            <div class="col-12">
+              <p class="fw-bold mt-5">
+                10. apakah anda aktif mencari pekerjaan dalam 4 minggu terakhir?
+                pilihlah satu jawaban
+              </p>
+              <div class="question-group" data-group="2">
+                <div class="row">
+                  <div class="col-md-6">
+                    <input type="radio" name="statusDua" id="kaos" />
+                    <label for="kaos" class="box w-100">
+                      <div class="course">
+                        <span class="circle"></span>
+                        <span class="subject">tidak</span>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="radio" name="statusDua" id="wols" />
+                    <label for="wols" class="box w-100">
+                      <div class="course">
+                        <span class="circle"></span>
+                        <span class="subject"
+                          >Tidak, tapi saya sedang menunggu hasil lamaean kerja
+                        </span>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="radio" name="statusDua" id="ngide" />
+                    <label for="ngide" class="box w-100">
+                      <div class="course">
+                        <span class="circle"></span>
+                        <span class="subject"
+                          >Ya, saya akan mulai bekerja dalam 2 minggu kedepan
+                        </span>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="radio" name="statusDua" id="affah" />
+                    <label for="affah" class="box w-100">
+                      <div class="course">
+                        <span class="circle"></span>
+                        <span class="subject">
+                          Ya, tapi saya belum pasti akan bekerja dalam 2 minggu
+                          ke depan</span
+                        >
+                      </div>
+                    </label>
+                  </div>
+                  <div class="col-12">
+                    <input type="radio" name="statusDua" id="ingyah" />
+                    <label for="ingyah" class="box w-100">
+                      <div class="course">
+                        <span class="circle"></span>
+                        <span class="subject"> </span>
+                        <input
+                          type="text"
+                          disabled
+                          class="form-control subject"
+                          placeholder="masukan nama anda"
+                          id="exampleInputEmail1"
+                        />
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <p class="fw-bold mt-5">
+                11. jika menurut anda pekerjaan anda saat ini tidak sesuai
+                dengan pendidikan anda. mengapa anda mengambilnya? jawaban bisa
+                lebih dari satu
+              </p>
+              <div class="check-question-group" data-group="2">
+                <div class="row">
+                  <div class="col-md-6">
+                    <input type="checkbox" name="Delapan" id="aowksp" />
+                    <label for="aowksp" class="box w-100">
+                      <div class="course">
+                        <span class="circle"></span>
+                        <span class="subject"
+                          >pertanyaan tidak sesuai. Pekerjaan saya sudah sesuai
+                          dengan pendidikan saya</span
+                        >
+                      </div>
+                    </label>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="checkbox" name="statusDua" id="iyakahb" />
+                    <label for="iyakahb" class="box w-100">
+                      <div class="course">
+                        <span class="circle"></span>
+                        <span class="subject"
+                          >Saya belum mendapatkan pekerjaan yang lebih
+                          sesuai</span
+                        >
+                      </div>
+                    </label>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="checkbox" name="statusDua" id="hayolo" />
+                    <label for="hayolo" class="box w-100">
+                      <div class="course">
+                        <span class="circle"></span>
+                        <span class="subject"
+                          >di pekerjaan ini saya memperoleh prospek karir yang
+                          baik</span
+                        >
+                      </div>
+                    </label>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="checkbox" name="statusDua" id="ckck" />
+                    <label for="ckck" class="box w-100">
+                      <div class="course">
+                        <span class="circle"></span>
+                        <span class="subject"
+                          >Saya lebih suka bekerja di area pekerjaan yang tidak
+                          ada hubungannya dengan pendidikan saya</span
+                        >
+                      </div>
+                    </label>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="checkbox" name="statusDua" id="katen" />
+                    <label for="katen" class="box w-100">
+                      <div class="course">
+                        <span class="circle"></span>
+                        <span class="subject"
+                          >saya dipromosikan ke posisi yang kurang berhubungan
+                          dengan pendidikan saya dibanding posisi
+                          sebelumnya</span
+                        >
+                      </div>
+                    </label>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="checkbox" name="statusDua" id="fsgd" />
+                    <label for="fsgd" class="box w-100">
+                      <div class="course">
+                        <span class="circle"></span>
+                        <span class="subject"
+                          >Saya dapat memperoleh pendapatan yang lebih tinggi di
+                          pekerjaan ini</span
+                        >
+                      </div>
+                    </label>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="checkbox" name="statusDua" id="speed" />
+                    <label for="speed" class="box w-100">
+                      <div class="course">
+                        <span class="circle"></span>
+                        <span class="subject"
+                          >Pekerjaan saya saat ini lebih aman / terjamin /
+                          secure</span
+                        >
+                      </div>
+                    </label>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="checkbox" name="statusDua" id="awokaws" />
+                    <label for="awokaws" class="box w-100">
+                      <div class="course">
+                        <span class="circle"></span>
+                        <span class="subject"
+                          >Pekerjaan saya saat ini lebih menarik</span
+                        >
+                      </div>
+                    </label>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="checkbox" name="statusDua" id="kaloajw" />
+                    <label for="kaloajw" class="box w-100">
+                      <div class="course">
+                        <span class="circle"></span>
+                        <span class="subject"
+                          >pekerjaan saya saat ini lebih memungkinkan saya
+                          mengambil pekerjaan tambahan / jadwal yang fleksibel,
+                          dll</span
+                        >
+                      </div>
+                    </label>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="checkbox" name="statusDua" id="sayonara" />
+                    <label for="sayonara" class="box w-100">
+                      <div class="course">
+                        <span class="circle"></span>
+                        <span class="subject"
+                          >Pekerjaan saya saat ini lokasinya lebih dekat dari
+                          rumah saya</span
+                        >
+                      </div>
+                    </label>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="checkbox" name="statusDua" id="sipdah" />
+                    <label for="sipdah" class="box w-100">
+                      <div class="course">
+                        <span class="circle"></span>
+                        <span class="subject"
+                          >Pekerjaan saya saat ini dapat lebih menjamin
+                          kebutuhan keluarga saya</span
+                        >
+                      </div>
+                    </label>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="checkbox" name="statusDua" id="abada" />
+                    <label for="abada" class="box w-100">
+                      <div class="course">
+                        <span class="circle"></span>
+                        <span class="subject"
+                          >pada awal meniti karir ini, saya harus menerima
+                          pekerjaan yang tidak berhubungan dengan pendidikan
+                          saya</span
+                        >
+                      </div>
+                    </label>
+                  </div>
+                  <div class="col-12">
+                    <input type="checkbox" name="statusDua" id="kawokad" />
+                    <label for="kawokad" class="box w-100">
+                      <div class="course">
+                        <span class="circle"></span>
+                        <span class="subject"> </span>
+                        <input
+                          type="text"
+                          disabled
+                          class="form-control subject"
+                          placeholder="masukan nama anda"
+                          id="exampleInputEmail1"
+                        />
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

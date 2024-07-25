@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+:root {
+  --base: #fefefe;
+}
+.c {
+  background-color: var(--base);
+}
+#buttons {
+  width: fit-content;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+p {
+  margin: 0%;
+}
+label.box {
+  display: flex;
+  margin-top: 10px;
+  padding: 10px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+}
+label.box:hover {
+  background: #f8bfbf83;
+}
+label.box .course {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+label.box .circle {
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  margin-right: 15px;
+  border: 2px solid #ddd;
+  display: inline-block;
+}
+.ops,
+#second-page,
+input[type="checkbox"],
+input[type="radio"] {
+  display: none;
+}
+label.box.active,
+label.box.active .circle {
+  border-color: #d52323;
+}
+label.box.active .circle {
+  border: 6px solid #ad3c3c;
+  background-color: #fff;
+}
+@media (max-width: 450px) {
+  .subject {
+    font-size: 12px;
+  }
+}
+.cc {
+  width: fit-content;
+  justify-content: center;
+}
+.cs {
+  margin-right: 0 !important;
+}
+#loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 1000;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+.ops {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
