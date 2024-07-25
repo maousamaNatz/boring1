@@ -8,10 +8,6 @@
 
 I'm passionate about technology and always eager to learn new things. Currently, I'm focusing on improving my coding skills and working on various projects. Feel free to check out my repositories and get in touch if you'd like to collaborate!
 
----
-
-If you have any specific preferences or additional details you would like to include, please let me know!
-
 # Project Title
 
 ## Introduction
